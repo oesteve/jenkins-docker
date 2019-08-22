@@ -11,3 +11,5 @@ RUN add-apt-repository \
 RUN apt-get update  -qq \
     && apt-get install -y docker-ce docker-ce-cli containerd.io
 RUN usermod -aG docker jenkins
+
+USER jenkins
